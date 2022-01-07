@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&display=swap');
+body{
+    background-image: linear-gradient(45deg,#33539E, #E887D4) ;
+    height: 94.9vh;
+    background-repeat: no-repeat;
+}
+.Page_name{
+    /* width: 100%; */
+    /* border: 2px solid red; */
+    margin-top:2%;
+    font-size:4rem;
+    margin-left: 10%;
+    color: white;
+    font-weight: 700;
+    font-family: 'Inconsolata', monospace;
+}
+#webcam-container{
+    /* border: 1px solid red; */
+    width: 50%;
+    margin: 2% auto;
+}
+
+#webcam-container canvas{
+    display: block;
+    /* border: 2px solid red; */
+    border-radius: 20px;
+    width: 45vw;
+    height: 80vh;
+}
+#label-container div:nth-child(1){
+    /* border: 2px solid red; */
+    width: 378px;
+    margin: 0 ;
+    padding: 0;
+    position: absolute;
+    top: 80%;
+    font-size: 28px;
+    color: white;
+    font-family: 'Inconsolata', monospace;
+}
+#label-container div:nth-child(2){
+    /* border: 2px solid red; */
+    width: 378px;
+    margin: 0 ;
+    padding: 0;
+    position: absolute;
+    top: 87%;
+    font-size: 28px;
+    color: white;
+    font-family: 'Inconsolata', monospace;
+}
+.btn{
+    width: 250px;
+    height: 60px;
+    font-size: 22px;
+    border-radius: 12px;
+    font-family: 'Inconsolata', monospace;
+    margin: 20% 0 0 40%;
+    color: white;
+    background-color:#7FACD6;
+    cursor: pointer;
+}
+@media screen and (max-width: 376px){
+    body{
+        background-image: linear-gradient(45deg,#33539E, #E887D4) ;
+        height: 100vh;
+        background-repeat: no-repeat;
+    }
+    #webcam-container canvas{
+        display: block;
+        border-radius: 20px;
+        width: 85vw;
+        height: 45vh;
+    }
+    #webcam-container{
+        width: 50%;
+        margin: 7% 0 0 5.5%;
+    }
+    .Page_name{
+        width: 80%;
+        font-size:28px;
+        margin-top:5%;
+        margin-left:8%;
+        line-height: 38px;
+        color: white;
+        font-weight: 700;
+        text-align: center;
+        font-family: 'Inconsolata', monospace;
+    }
+    #label-container div:nth-child(1){
+        width: 378px;
+        margin: 0 ;
+        padding: 0;
+        position: absolute;
+        top: 57%;
+        left: 13%;
+        font-size: 18px;
+        color: white;
+        font-family: 'Inconsolata', monospace;
+    }
+    #label-container div:nth-child(2){
+        width: 378px;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 54%;
+        left: 13%;
+        font-size: 18px;
+        color: white;
+        font-family: 'Inconsolata', monospace;
+    }
+    .btn{
+        width: 200px;
+        height: 35px;
+        border-radius: 12px;
+        font-family: 'Inconsolata', monospace;
+        margin: 45% 0 0 20.5%;
+        border: none;
+        color: white;
+        background-color:#7FACD6;
+        cursor: pointer;
+    }
+}
