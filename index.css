@@ -30,23 +30,24 @@ body{
 #label-container div:nth-child(1){
     /* border: 2px solid red; */
     width: 378px;
-    margin: 0 ;
+    margin: 3% 0 0 2%;
     padding: 0;
-    position: absolute;
-    top: 80%;
-    font-size: 28px;
-    color: white;
+    /* position: absolute;
+    top: 80%; */
+    font-size: 22px;
+
+    color: black;
     font-family: 'Inconsolata', monospace;
 }
 #label-container div:nth-child(2){
     /* border: 2px solid red; */
     width: 378px;
-    margin: 0 ;
+    margin: 3% 0 0 2%;
     padding: 0;
-    position: absolute;
-    top: 87%;
-    font-size: 28px;
-    color: white;
+    /* position: absolute;
+    top: 87%; */
+    font-size: 22px;
+    color: black;
     font-family: 'Inconsolata', monospace;
 }
 .btn{
@@ -59,6 +60,15 @@ body{
     color: white;
     background-color:#7FACD6;
     cursor: pointer;
+}
+#label-container{
+    width: 20%;
+    height: 80vh;
+    border: 2px solid rgb(102, 95, 95);
+    position: absolute;
+    top: 17%;
+    background-color: #E8EAED;
+    border-radius: 12px;
 }
 @media screen and (max-width: 376px){
     body{
