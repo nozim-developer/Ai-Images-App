@@ -50,6 +50,75 @@ body{
     color: black;
     font-family: 'Inconsolata', monospace;
 }
+#label-container div:nth-child(3){
+    /* border: 2px solid red; */
+    width: 378px;
+    margin: 3% 0 0 2%;
+    padding: 0;
+    /* position: absolute;
+    top: 80%; */
+    font-size: 22px;
+
+    color: black;
+    font-family: 'Inconsolata', monospace;
+}
+#label-container div:nth-child(4){
+    /* border: 2px solid red; */
+    width: 378px;
+    margin: 3% 0 0 2%;
+    padding: 0;
+    /* position: absolute;
+    top: 87%; */
+    font-size: 22px;
+    color: black;
+    font-family: 'Inconsolata', monospace;
+}
+#label-container div:nth-child(5){
+    /* border: 2px solid red; */
+    width: 378px;
+    margin: 3% 0 0 2%;
+    padding: 0;
+    /* position: absolute;
+    top: 80%; */
+    font-size: 22px;
+
+    color: black;
+    font-family: 'Inconsolata', monospace;
+}
+#label-container div:nth-child(6){
+    /* border: 2px solid red; */
+    width: 378px;
+    margin: 3% 0 0 2%;
+    padding: 0;
+    /* position: absolute;
+    top: 87%; */
+    font-size: 22px;
+    color: black;
+    font-family: 'Inconsolata', monospace;
+}
+#label-container div:nth-child(7){
+    /* border: 2px solid red; */
+    width: 378px;
+    margin: 3% 0 0 2%;
+    padding: 0;
+    /* position: absolute;
+    top: 80%; */
+    font-size: 22px;
+
+    color: black;
+    font-family: 'Inconsolata', monospace;
+}
+#label-container div:nth-child(8){
+    /* border: 2px solid red; */
+    width: 378px;
+    margin: 3% 0 0 2%;
+    padding: 0;
+    /* position: absolute;
+    top: 87%; */
+    font-size: 22px;
+    color: black;
+    font-family: 'Inconsolata', monospace;
+}
 .btn{
     width: 250px;
     height: 60px;
