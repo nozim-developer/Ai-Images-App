@@ -1,202 +1,240 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&display=swap');
-body{
-    background-image: linear-gradient(45deg,#33539E, #E887D4) ;
-    height: 94.9vh;
-    background-repeat: no-repeat;
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+body {
+  background-image: linear-gradient(45deg, #33539e, #e887d4);
+  height: 95.9vh;
+  background-repeat: no-repeat;
 }
-.Page_name{
-    /* width: 100%; */
-    /* border: 2px solid red; */
-    margin-top:2%;
-    font-size:4rem;
-    margin-left: 10%;
+.Page_name {
+  /* width: 100%; */
+  /* border: 2px solid red; */
+  margin-top: 1.5%;
+  font-size: 4rem;
+  text-align: center;
+  margin-left:-3%;
+  color: white;
+  font-weight: 700;
+  font-family: "Inconsolata", monospace;
+}
+#webcam-container {
+  /* border: 1px solid red; */
+  width: 45.4%;
+  border-radius: 22px;
+  /* border: 2px solid red; */
+  margin: 2% auto;
+  background: rgb(0, 0, 0);
+  display: none;
+  height: 83.5%;
+}
+
+#webcam-container canvas {
+  display: block;
+  /* border: 2px solid red; */
+  border-radius: 20px;
+  width: 45vw;
+  height: 80vh;
+}
+#label-container div:nth-child(1) {
+  /* border: 2px solid red; */
+  width: 378px;
+  margin: 3% 0 0 2%;
+  padding: 0;
+  /* position: absolute;
+    top: 80%; */
+  font-size: 22px;
+
+  color: black;
+  font-family: "Inconsolata", monospace;
+}
+#label-container div:nth-child(2) {
+  /* border: 2px solid red; */
+  width: 378px;
+  margin: 3% 0 0 2%;
+  padding: 0;
+  /* position: absolute;
+    top: 87%; */
+  font-size: 22px;
+  color: black;
+  font-family: "Inconsolata", monospace;
+}
+#label-container div:nth-child(3) {
+  /* border: 2px solid red; */
+  width: 378px;
+  margin: 3% 0 0 2%;
+  padding: 0;
+  /* position: absolute;
+    top: 80%; */
+  font-size: 22px;
+
+  color: black;
+  font-family: "Inconsolata", monospace;
+}
+#label-container div:nth-child(4) {
+  /* border: 2px solid red; */
+  width: 378px;
+  margin: 3% 0 0 2%;
+  padding: 0;
+  /* position: absolute;
+    top: 87%; */
+  font-size: 21px;
+  color: black;
+  font-family: "Inconsolata", monospace;
+}
+#label-container div:nth-child(5) {
+  /* border: 2px solid red; */
+  width: 378px;
+  margin: 3% 0 0 2%;
+  padding: 0;
+  /* position: absolute;
+    top: 80%; */
+  font-size: 22px;
+
+  color: black;
+  font-family: "Inconsolata", monospace;
+}
+#label-container div:nth-child(6) {
+  /* border: 2px solid red; */
+  width: 378px;
+  margin: 3% 0 0 2%;
+  padding: 0;
+  /* position: absolute;
+    top: 87%; */
+  font-size: 22px;
+  color: black;
+  font-family: "Inconsolata", monospace;
+}
+#label-container div:nth-child(7) {
+  /* border: 2px solid red; */
+  width: 378px;
+  margin: 3% 0 0 2%;
+  padding: 0;
+  /* position: absolute;
+    top: 80%; */
+  font-size: 22px;
+
+  color: black;
+  font-family: "Inconsolata", monospace;
+}
+#label-container div:nth-child(8) {
+  /* border: 2px solid red; */
+  width: 378px;
+  margin: 3% 0 0 2%;
+  padding: 0;
+  /* position: absolute;
+    top: 87%; */
+  font-size: 22px;
+  color: black;
+  font-family: "Inconsolata", monospace;
+}
+#label-container div:nth-child(9) {
+  /* border: 2px solid red; */
+  width: 378px;
+  margin: 3% 0 0 2%;
+  padding: 0;
+  /* position: absolute;
+    top: 87%; */
+  font-size: 22px;
+  color: black;
+  font-family: "Inconsolata", monospace;
+}
+.btn {
+  width: 250px;
+  height: 60px;
+  font-size: 22px;
+  border-radius: 12px;
+  font-family: "Inconsolata", monospace;
+  margin: 20% 0 0 40%;
+  color: white;
+  background-color: #7facd6;
+  cursor: pointer;
+}
+#label-container {
+  width: 20%;
+  height: 80vh;
+  border: 2px solid rgb(102, 95, 95);
+  position: absolute;
+  top: 16%;
+  background-color: #e8eaed;
+  border-radius: 12px;
+  display: none;
+  transition: all 2s ease-in;
+}
+.page_title {
+  position: absolute;
+  top: 93%;
+  left: 85%;
+  color: #003261;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 900;
+  font-family: "Varela Round", sans-serif;
+  text-decoration: none;
+}
+@media screen and (max-width: 376px) {
+  body {
+    background-image: linear-gradient(45deg, #33539e, #e887d4);
+    min-height: 1100px;
+    background-repeat: no-repeat;
+  }
+  #webcam-container canvas {
+    display: block;
+    border-radius: 20px;
+    width: 85vw;
+    height: 45vh;
+  }
+  #webcam-container {
+    width: 50%;
+    margin: 7% 0 0 5.5%;
+  }
+  .Page_name {
+    width: 80%;
+    font-size: 28px;
+    margin-top: 5%;
+    margin-left: 8%;
+    line-height: 38px;
     color: white;
     font-weight: 700;
-    font-family: 'Inconsolata', monospace;
-}
-#webcam-container{
-    /* border: 1px solid red; */
-    width: 50%;
-    margin: 2% auto;
-}
-
-#webcam-container canvas{
-    display: block;
-    /* border: 2px solid red; */
-    border-radius: 20px;
-    width: 45vw;
-    height: 80vh;
-}
-#label-container div:nth-child(1){
-    /* border: 2px solid red; */
-    width: 378px;
-    margin: 3% 0 0 2%;
-    padding: 0;
-    /* position: absolute;
-    top: 80%; */
-    font-size: 22px;
-
-    color: black;
-    font-family: 'Inconsolata', monospace;
-}
-#label-container div:nth-child(2){
-    /* border: 2px solid red; */
-    width: 378px;
-    margin: 3% 0 0 2%;
-    padding: 0;
-    /* position: absolute;
-    top: 87%; */
-    font-size: 22px;
-    color: black;
-    font-family: 'Inconsolata', monospace;
-}
-#label-container div:nth-child(3){
-    /* border: 2px solid red; */
-    width: 378px;
-    margin: 3% 0 0 2%;
-    padding: 0;
-    /* position: absolute;
-    top: 80%; */
-    font-size: 22px;
-
-    color: black;
-    font-family: 'Inconsolata', monospace;
-}
-#label-container div:nth-child(4){
-    /* border: 2px solid red; */
-    width: 378px;
-    margin: 3% 0 0 2%;
-    padding: 0;
-    /* position: absolute;
-    top: 87%; */
-    font-size: 22px;
-    color: black;
-    font-family: 'Inconsolata', monospace;
-}
-#label-container div:nth-child(5){
-    /* border: 2px solid red; */
-    width: 378px;
-    margin: 3% 0 0 2%;
-    padding: 0;
-    /* position: absolute;
-    top: 80%; */
-    font-size: 22px;
-
-    color: black;
-    font-family: 'Inconsolata', monospace;
-}
-#label-container div:nth-child(6){
-    /* border: 2px solid red; */
-    width: 378px;
-    margin: 3% 0 0 2%;
-    padding: 0;
-    /* position: absolute;
-    top: 87%; */
-    font-size: 22px;
-    color: black;
-    font-family: 'Inconsolata', monospace;
-}
-#label-container div:nth-child(7){
-    /* border: 2px solid red; */
-    width: 378px;
-    margin: 3% 0 0 2%;
-    padding: 0;
-    /* position: absolute;
-    top: 80%; */
-    font-size: 22px;
-
-    color: black;
-    font-family: 'Inconsolata', monospace;
-}
-#label-container div:nth-child(8){
-    /* border: 2px solid red; */
-    width: 378px;
-    margin: 3% 0 0 2%;
-    padding: 0;
-    /* position: absolute;
-    top: 87%; */
-    font-size: 22px;
-    color: black;
-    font-family: 'Inconsolata', monospace;
-}
-.btn{
-    width: 250px;
-    height: 60px;
-    font-size: 22px;
+    text-align: center;
+    font-family: "Inconsolata", monospace;
+  }
+  #label-container {
+    border: 2px solid red;
+    margin: 100% 0 0 7%;
+    width: 80%;
+    height: 38vh;
+    display: none;
+  }
+  #label-container div:nth-child(1),
+  div:nth-child(2),
+  div:nth-child(3),
+  div:nth-child(4),
+  div:nth-child(5),
+  div:nth-child(6),
+  div:nth-child(7),
+  div:nth-child(8),
+  div:nth-child(9) {
+    max-width: 100%;
+  }
+  .btn {
+    width: 200px;
+    height: 35px;
     border-radius: 12px;
-    font-family: 'Inconsolata', monospace;
-    margin: 20% 0 0 40%;
+    font-family: "Inconsolata", monospace;
+    margin: 45% 0 0 20.5%;
+    border: none;
     color: white;
-    background-color:#7FACD6;
+    background-color: #7facd6;
     cursor: pointer;
-}
-#label-container{
-    width: 20%;
-    height: 80vh;
-    border: 2px solid rgb(102, 95, 95);
+  }
+  .page_title {
+    font-size: 18px;
+    font-weight: 900;
+    color: #003261;
+    cursor: pointer;
     position: absolute;
-    top: 17%;
-    background-color: #E8EAED;
-    border-radius: 12px;
-}
-@media screen and (max-width: 376px){
-    body{
-        background-image: linear-gradient(45deg,#33539E, #E887D4) ;
-        height: 100vh;
-        background-repeat: no-repeat;
-    }
-    #webcam-container canvas{
-        display: block;
-        border-radius: 20px;
-        width: 85vw;
-        height: 45vh;
-    }
-    #webcam-container{
-        width: 50%;
-        margin: 7% 0 0 5.5%;
-    }
-    .Page_name{
-        width: 80%;
-        font-size:28px;
-        margin-top:5%;
-        margin-left:8%;
-        line-height: 38px;
-        color: white;
-        font-weight: 700;
-        text-align: center;
-        font-family: 'Inconsolata', monospace;
-    }
-    #label-container div:nth-child(1){
-        width: 378px;
-        margin: 0 ;
-        padding: 0;
-        position: absolute;
-        top: 57%;
-        left: 13%;
-        font-size: 18px;
-        color: white;
-        font-family: 'Inconsolata', monospace;
-    }
-    #label-container div:nth-child(2){
-        width: 378px;
-        margin: 0;
-        padding: 0;
-        position: absolute;
-        top: 54%;
-        left: 13%;
-        font-size: 18px;
-        color: white;
-        font-family: 'Inconsolata', monospace;
-    }
-    .btn{
-        width: 200px;
-        height: 35px;
-        border-radius: 12px;
-        font-family: 'Inconsolata', monospace;
-        margin: 45% 0 0 20.5%;
-        border: none;
-        color: white;
-        background-color:#7FACD6;
-        cursor: pointer;
-    }
+    top: 105%;
+    left: 25%;
+    font-family: "Varela Round", sans-serif;
+  }
 }
